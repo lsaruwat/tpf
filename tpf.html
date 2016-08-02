@@ -1,0 +1,625 @@
+<html><head></head><body><table width="100%">
+  <tbody>
+    <tr class="even-row">
+        <td width="3%">&nbsp;</td>
+        <td width="25%"><font style="font-weight: bold; color: navy;">Instruction</font></td>
+        <td width="10%"><font style="font-weight: bold; color: navy">Mnemonic&nbsp;</font></td>
+        <td width="8%"><font style="font-weight: bold; color: navy">Hex&nbsp;</font></td>
+        <td><font style="font-weight: bold; color: navy">Format</font></td>
+        <td><font style="font-weight: bold; color: navy">Condition Code Changed</font></td>
+    </tr>
+    <tr>
+    <td><a name="tocA">&nbsp;</a></td>
+    <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#A">Add</a></td>
+    <td>A</td>
+    <td>5A</td>
+    <td>R1,D2(X2,B2)</td>
+    <td>Y</td>
+    </tr>
+    <tr class="even-row">
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#AH">Add Halfword</a></td>
+    <td>AH</td>
+    <td>4A</td>
+    <td>R1,D2(X2,B2)</td>
+    <td>Y</td>
+    </tr>
+
+
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#AR">Add Registers</a></td>
+        <td>AR</td>
+        <td>1A</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#BAS">Branch and Save</a></td>
+        <td>BAS</td>
+        <td>4D</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#BASR">Branch and Save Register</a></td>
+        <td>BASR</td>
+        <td>0D</td>
+        <td nowrap="NOWRAP">R1,R2</td>
+        <td>N</td>
+        </tr>
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#BC">Branch on Condition</a></td>
+        <td>BC</td>
+        <td>47</td>
+        <td>M1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#BCT">Branch on Count</a></td>
+        <td>BCT</td>
+        <td>46</td>
+        <td>R1,D2((X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#BCTR">Branch on Count Register</a></td>
+        <td>BCTR</td>
+        <td>06</td>
+        <td>R1,R2</td>
+        <td>N</td>
+        </tr>
+
+
+
+        <tr>
+        <td><a name="tocC">&nbsp;</a></td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#C">Compare</a></td>
+        <td>C</td>
+        <td>59</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#CH">Compare Halfword</a></td>
+        <td>CH</td>
+        <td>49</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td nowrap="NOWRAP"><a target="_blank" href="http://www.simotime.com/asmins01.htm#CLC">Compare Logical Characters</a></td>
+        <td>CLC</td>
+        <td>D5</td>
+        <td>D1(L,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#CLI">Compare Logical Immediate</a></td>
+        <td>CLI</td>
+        <td>95</td>
+        <td>D1(B1),I2</td>
+        <td>Y</td>
+        </tr>
+
+
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#CR">Compare Registers</a></td>
+        <td>CR</td>
+        <td>19</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#CVB">Convert to Binary</a></td>
+        <td>CVB</td>
+        <td>4F</td>
+        <td>R1,D2((X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#CVD">Convert to Decimal</a></td>
+        <td>CVD</td>
+        <td>4E</td>
+        <td>R1,D2((X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td><a name="tocD">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#D">Divide</a></td>
+        <td>D</td>
+        <td>5D</td>
+        <td>R1,D2((X2,B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#DR">Divide Registers</a></td>
+        <td>DR</td>
+        <td>1D</td>
+        <td>R1,R2</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td><a name="tocE">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#ED">Edit</a></td>
+        <td>ED</td>
+        <td>DE</td>
+        <td>D1(L1,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#EDMK">Edit and Mark</a></td>
+        <td>EDMK</td>
+        <td>DF</td>
+        <td>D1(L1,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#EX">Execute</a></td>
+        <td>EX</td>
+        <td>44</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td><a name="tocI">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#IC">Insert Character</a></td>
+        <td>IC</td>
+        <td>43</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#ICM">Insert Character under Mask</a></td>
+        <td>ICM</td>
+        <td>BF</td>
+        <td>R1,M3,D2(B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td><a name="tocL">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#L">Load</a></td>
+        <td>L</td>
+        <td>58</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#LA">Load Address</a></td>
+        <td>LA</td>
+        <td>41</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#LH">Load Halfword</a></td>
+        <td>LH</td>
+        <td>48</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#LM">Load Multiple</a></td>
+        <td>LM</td>
+        <td>98</td>
+        <td>R1,R3,D2(B2)</td>
+        <td>N</td>
+        </tr>
+
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#LR">Load Register</a></td>
+        <td>LR</td>
+        <td>18</td>
+        <td>R1,R2</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#LTR">Load and Test Register</a></td>
+        <td>LTR</td>
+        <td>12</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td><a name="tocM">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#M">Multipy</a></td>
+        <td>M</td>
+        <td>5C</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#MH">Multipy Halfword</a></td>
+        <td>MH</td>
+        <td>4C</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#MR">Multipy Registers</a></td>
+        <td>MR</td>
+        <td>1C</td>
+        <td>R1,R2</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#MVC">Move Characters</a></td>
+        <td>MVC</td>
+        <td>D2</td>
+        <td>D1(L,B1),D2(B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#MVCL">Move Characters Long</a></td>
+        <td>MVCL</td>
+        <td>0E</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#MVI">Move Immediate</a></td>
+        <td>MVI</td>
+        <td>92</td>
+        <td>D1(B1),I2</td>
+        <td>N</td>
+        </tr>
+
+
+
+        <tr>
+        <td><a name="tocN">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#N">aNd</a></td>
+        <td>N</td>
+        <td>54</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#NC">aNd Characters</a></td>
+        <td>NC</td>
+        <td>D4</td>
+        <td>D1(L,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#NI">aNd Immediate</a></td>
+        <td>NI</td>
+        <td>94</td>
+        <td>D1(B1),I2</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#NR">aNd Registers</a></td>
+        <td>NR</td>
+        <td>14</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td><a name="tocO">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#O">Or</a></td>
+        <td>O</td>
+        <td>56</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#OC">Or Characters</a></td>
+        <td>OC</td>
+        <td>D6</td>
+        <td>D1(L,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#OI">Or Immediate</a></td>
+        <td>OI</td>
+        <td>96</td>
+        <td>D1(B1),I2</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#OR">Or Registers</a></td>
+        <td>OR</td>
+        <td>16</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td><a name="tocP">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#PACK">Pack</a></td>
+        <td>PACK</td>
+        <td>F2</td>
+        <td>D1(L1,B1),D2(L2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td><a name="tocS">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#S">Subtract</a></td>
+        <td>S</td>
+        <td>5B</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SH">Subtract Halfword</a></td>
+        <td>SH</td>
+        <td>4B</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SLA">Shift Left Single</a></td>
+        <td>SLA</td>
+        <td>8B</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SLDA">Shift Left Double</a></td>
+        <td>SLDA</td>
+        <td>8F</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SLDL">Shift Left Double Logical</a></td>
+        <td>SLDL</td>
+        <td>8D</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SLL">Shift Left Single Logical</a></td>
+        <td>SLL</td>
+        <td>89</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+
+
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SR">Subtract Registers</a></td>
+        <td>SR</td>
+        <td>1B</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SRA">Shift Right Single</a></td>
+        <td>SRA</td>
+        <td>8A</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SRDA">Shift Right Double</a></td>
+        <td>SRDA</td>
+        <td>8E</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SRDL">Shift Right Double Logical</a></td>
+        <td>SRDL</td>
+        <td>8C</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#SRL">Shift Right Single Logical</a></td>
+        <td>SRL</td>
+        <td>88</td>
+        <td>R1,D2(B2)</td>
+        <td>Y</td>
+        </tr>
+
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#ST">Store</a></td>
+        <td>ST</td>
+        <td>50</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#STC">Store Character</a></td>
+        <td>STC</td>
+        <td>42</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#STCM">Store Character under Mask</a></td>
+        <td>STCM</td>
+        <td>BE</td>
+        <td>R1,M3,D2(B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#STH">Store Halfword</a></td>
+        <td>STH</td>
+        <td>40</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#STM">Store Multiple</a></td>
+        <td>STM</td>
+        <td>90</td>
+        <td>R1,R3,D2(B2)</td>
+        <td>N</td>
+        </tr>
+
+        <tr class="even-row">
+        <td><a name="tocT">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#TM">Test under Mask</a></td>
+        <td>TM</td>
+        <td>91</td>
+        <td>D1(B1),I2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#TR">Translate</a></td>
+        <td>TR</td>
+        <td>DC</td>
+        <td>D1(L1,B1),D2(B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#TRT">Translate and Test</a></td>
+        <td>TRT</td>
+        <td>DD</td>
+        <td>D1(L1,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td><a name="tocU">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#UNPK">Unpack</a></td>
+        <td>UNPK</td>
+        <td>F3</td>
+        <td>D1(L1,B1),D2(L2,B2)</td>
+        <td>N</td>
+        </tr>
+        <tr class="even-row">
+        <td><a name="tocX">&nbsp;</a></td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#X">eXclusive Or</a></td>
+        <td>X</td>
+        <td>57</td>
+        <td>R1,D2(X2,B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#XC">eXclusive Or Characters</a></td>
+        <td>XC</td>
+        <td>D7</td>
+        <td>D1(L,B1),D2(B2)</td>
+        <td>Y</td>
+        </tr>
+        <tr class="even-row">
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#XI">eXclusive Or Immediate</a></td>
+        <td>XI</td>
+        <td>97</td>
+        <td>D1(B1),I2</td>
+        <td>Y</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td><a target="_blank" href="http://www.simotime.com/asmins01.htm#XR">eXclusive Or Registers</a></td>
+        <td>XR</td>
+        <td>17</td>
+        <td>R1,R2</td>
+        <td>Y</td>
+        </tr>
+
+  </tbody></table>
+  <div class="img-container">
+  <img src="https://s32.postimg.org/83z5zgp85/table.png" class="table">
+</div>
+  <script type="text/javascript">
+  function updateStyle(e){
+    let tableRows = document.getElementsByTagName("tr");
+    for(let i=0; i<tableRows.length; i+=2){
+      let rowData = tableRows[i].getElementsByTagName("td");
+      tableRows[i].setAttribute("class", "even-row");
+      //for(let j=0; j<rowData.length; j++){
+      //    rowData[j].setAttribute("class", "even-row");
+      //}
+    }
+  }
+  //updateStyle();
+  </script>
+  <style>
+    body{
+      font-family: helvetica;
+      font-size: 24px;
+    }
+    a{
+      text-decoration: none;
+    }
+    table{
+      border: solid 2px #555;
+    }
+    tr td{
+      padding-bottom: 5px;
+
+    }
+    div.img-container{
+      text-align: center;
+      margin-top: 20px;
+    }
+    img.table{
+      margin: 0px auto;
+    }
+    .even-row{
+      background-color: #DDD;
+    }
+  </style>
+
+
+
+</body></html>
